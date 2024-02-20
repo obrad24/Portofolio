@@ -15,7 +15,7 @@ export default function Project({ title, description, tags, imageUrl }: Temp) {
         target: ref,
         offset: ["0 1", "1.33 1"],
     });
-    const scaleProgress = useTransform(scrollYProgress, [0,1],[0.7,1]);
+    const scaleProgress = useTransform(scrollYProgress, [0,1],[0.5,1]);
     const opacityProgres = useTransform(scrollYProgress, [0,1],[0.6,1])
 
     return <motion.div
